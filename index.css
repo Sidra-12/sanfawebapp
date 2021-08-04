@@ -1,0 +1,118 @@
+ul {
+    list-style-type: none;
+    margin:0%;
+    padding: 0%;
+    overflow:hidden;
+    background-color:tomato;
+
+  }
+
+li{
+    display:inline;
+    float:left;
+}
+
+li a{
+    display:block;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+    }
+li a:hover{
+    background-color:grey;
+}
+
+
+
+* {
+    box-sizing: border-box; 
+    font-family: sans-serif;
+  }
+  
+  body {
+    margin: 0px;
+  }
+  
+  .wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y:visible;
+    perspective: 1px;
+  }
+  
+  .section { 
+    position: relative;
+    height: 100vh;
+    
+    
+  }
+  
+  .parallax::after {
+    content: "";
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    transform: translateZ(-1px) scale(2);
+    background-size: cover;
+    z-index: -1;
+  }
+  
+  .image1::after { 
+    /* Unplash offers free for use pictures and I don't even have to give credit*/
+    /* But those pictures are too good go like the author*/
+    /* Here ---> https://unsplash.com/photos/Qhv1SrMLebk */
+    background-image: url('first.jfif')
+  }
+  
+  .image2::after {
+    /* @ unplash from NASA */
+    /* https://unsplash.com/photos/-hI5dX2ObAs */
+    background-image: url('https://images.unsplash.com/photo-1462332420958-a05d1e002413?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3740&q=80');
+    
+  }
+  
+  .static {
+    overflow: hidden;
+    background: #D5C49A;
+  }
+
+  .SANFA{text-align: center;}
+
+ .first{
+   padding-top: 80px;
+   padding-left: 50px;
+   font-size: 25px;
+   color:white;
+ }
+
+ .banner{
+   display: flex;
+ }
+
+ .change > p{
+   padding-left: 200px;
+   padding-right: 200px;
+   padding-top: 15 px;
+   text-align: center;
+   color: #1f1e1ed3;
+   
+ }
+
+ .final{
+   display: flex;
+  align-items: center;
+ }
+ .final>div{
+   align-items: center;
+   padding: 50px;
+   padding-top: 60px;
+ }
+
+ .final > div >p{
+   color: black;
+ }
